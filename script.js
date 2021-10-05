@@ -15,3 +15,7 @@ function findCity(cty) {
     };
     return false;
 };
+
+// get api key from : https://home.openweathermap.org/api_keys
+let APIkey = "48726321b245b2f4d5392ad8202e246e";
+let city = "";
