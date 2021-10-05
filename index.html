@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,28 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
+
 <body>
-     <div class="container-fluid mt-2 text-center" style="background-color:#9d4edd ;color: white; height: 100px;">
+    <div class="container-fluid mt-2 text-center" style="background-color:#9d4edd ;color: white; height: 100px;">
         <h1> <strong>Weather Dashboard</strong></h1>
     </div>
+    <div class="container">
+        <div class="row" style="background-color: #ede0d4;">
+            <div class="col-sm-4 bg-light">
+                <h4 class="pt-1"><strong>Search for a City:</strong></h4>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="citySearch" aria-label="City
+                        aria-describedby=" search-button">
+                    <div>
+                        <button class=" btn bg-primary text-light" id="searchButton"><i
+                                class="bi bi-geo-alt"></i></button>
+                    </div>
+                </div>
+                <ul class="list-group"></ul>
+            </div>
+        </div>
+    </div>
+    
 </body>
+
 </html>
