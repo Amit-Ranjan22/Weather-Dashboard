@@ -130,3 +130,6 @@ function usePastSearch(event){
         currentWeather(city);
     };
 };
+
+$("#searchButton").on("click", showWeather);
+$(document).on("click", usePastSearch);
