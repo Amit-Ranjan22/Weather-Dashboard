@@ -32,4 +32,11 @@ function showWeather(event) {
 function currentWeather(city){
     // get request url from :  https://openweathermap.org/forecast5
     let requestURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIkey}`;
-}
+
+    fetch(requestURL)
+    .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+};
