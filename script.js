@@ -80,7 +80,7 @@ function currentWeather(city){
         });
 };
 
-urrentWeather("atlanta");
+currentWeather("atlanta");
 
 function UVIndex(long, lat){
     let uvUrl = `https://api.openweathermap.org/data/2.5/uvi?appid=${APIkey}&lon=${long}&lat=${lat}`;
