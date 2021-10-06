@@ -53,3 +53,18 @@ WHEN: a function "usePastSearch(event)" is written to invoke the "currentWeather
 Deployed application should look like the below given image.<br>
 ------
 <img src = "Assets/06-server-side-apis-homework-demo.png" alt= "Demo-app-image">
+
+------
+Deployed application screenshot<br>
+------
+<img src = "" alt= "weather-dashboard-app-screenshot">
+
+*GitHub URL to the repository*
+------
+https://github.com/Amit-Ranjan22/Weather-Dashboard.git
+------
+
+*URL to the deployed application*
+------
+https://amit-ranjan22.github.io/Weather-Dashboard/
+------
