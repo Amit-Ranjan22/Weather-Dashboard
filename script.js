@@ -61,4 +61,21 @@ function currentWeather(city){
 
             UVIndex(data.coord.lon, data.coord.lat);
             foreCast(data.id);
+
+            if (data.cod === 200) {
+                citiesArr = JSON.parse(localStorage.getItem("cityname"));
+                console.log(citiesArr);
+
+                if (citiesArr == null) {
+                    citiesArr = [];
+                    localStorage.setItem("cityname", JSON.stringify(citiesArr));
+                    addToList(city);
+                } else {
+                    if (find(city) > 0) {
+                        localStorage.setItem("cityname", JSON.stringify(citiesArr));
+                        addToList(city);
+                    };
+                };
+            };
+        });
 };
