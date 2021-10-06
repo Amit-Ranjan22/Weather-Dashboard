@@ -9,7 +9,7 @@ SO THAT :  I can plan my trip accordingly.
 
 **Acceptance Criteria**
 
-**(1)*I am given a text box to search for any city forecast**
+**(1)* I am given a text box to search for any city forecast**
 ------
 It's considered done<br>
 ------
@@ -17,7 +17,7 @@ WHEN: A div is created and an input box type text is added to the div.<br>
 WHEN: A button element is added inside that div to click and search for the city.<br>
 WHEN: All the divs are given class name and IDs & those ids are used to style the page.
 
-**(2)*When I search for a city then I am presented with current and future conditions for that city and that city is added to the search history**
+**(2)* When I search for a city then I am presented with current and future conditions for that city and that city is added to the search history**
 ------
 It's considered done<br>
 ------
@@ -31,7 +31,7 @@ WHEN: loccal storage is created to store the cities name used for serching wethe
 WHEN: a function "foreCast()" is written to display the forecast for next 5 days.<br>
 WHEN: for-loop is used to display the weather for each day.
 
-**(3)*When I view current weather conditions for that city, then I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index**
+**(3)* When I view current weather conditions for that city, then I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index**
 ------
 It's considered done<br>
 ------
@@ -41,7 +41,7 @@ WHEN: by generated response is used to access the temperature, humidity, wind-sp
       inside fetch() method.<br>
 WHEN: url is used to fetch the weather icon from the website.<br>
 
-**(4)*WHEN I click on a city in the search history, then I am again presented with current and future conditions for that city**
+**(4)* WHEN I click on a city in the search history, then I am again presented with current and future conditions for that city**
 ------
 It's considered done<br>
 ------
@@ -52,3 +52,4 @@ WHEN: a function "usePastSearch(event)" is written to invoke the "currentWeather
 ------
 Deployed application should look like the below given image.<br>
 ------
+<img src = "Assets/06-server-side-apis-homework-demo.png" alt= "Demo-app-image">
