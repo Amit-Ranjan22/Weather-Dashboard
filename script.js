@@ -49,4 +49,16 @@ function currentWeather(city){
             // $(currentCity).html(data.name + "<img src=" + iconUrl + ">");
             // currentCity.textContent = `${data.name}<img src=${iconUrl}>`
             let currentDate = moment().format("MMM Do, YYYY");
+
+            $(currentCity).html(`${data.name}<img src=${iconUrl}>${currentDate}`);
+
+            let tempF = data.main.temp;
+            $(currentTemperature).html(tempF + "℉");
+
+            $(currentHumidty).html(data.main.humidity + "%");
+
+            $(currentWindSpeed).html(data.wind.speed);
+
+            UVIndex(data.coord.lon, data.coord.lat);
+            foreCast(data.id);
 };
