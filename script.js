@@ -122,3 +122,11 @@ function addToList(cty){
     let listEl = $("<li>" + cty + "</li>");
     $(".list-group").append(listEl);
 };
+
+function usePastSearch(event){
+    let listEl = event.target;
+    if (event.target.matches("li")){
+        city = listEl.textContent;
+        currentWeather(city);
+    };
+};
