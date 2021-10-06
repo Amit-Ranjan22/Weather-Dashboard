@@ -79,3 +79,17 @@ function currentWeather(city){
             };
         });
 };
+
+urrentWeather("atlanta");
+
+function UVIndex(long, lat){
+    let uvUrl = `https://api.openweathermap.org/data/2.5/uvi?appid=${APIkey}&lon=${long}&lat=${lat}`;
+
+    fetch(uvUrl)
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(data){
+        $(currentUvindex).html(data.value);
+    });
+};
