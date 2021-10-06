@@ -117,3 +117,8 @@ function foreCast(dataId){
         };
     });
 };
+
+function addToList(cty){
+    let listEl = $("<li>" + cty + "</li>");
+    $(".list-group").append(listEl);
+};
