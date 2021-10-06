@@ -39,4 +39,14 @@ function currentWeather(city){
         })
         .then(function (data) {
             console.log(data);
+
+            let weatherIcon = data.weather[0].icon;
+            // get the url for weather icon from : https://openweathermap.org/weather-conditions
+            let iconUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
+
+            // let date = moment().format("dddd, MM-Do-YYYY, h:mm:ss a");
+
+            // $(currentCity).html(data.name + "<img src=" + iconUrl + ">");
+            // currentCity.textContent = `${data.name}<img src=${iconUrl}>`
+            let currentDate = moment().format("MMM Do, YYYY");
 };
