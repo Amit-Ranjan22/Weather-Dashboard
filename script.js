@@ -28,3 +28,8 @@ function showWeather(event) {
         currentWeather(city);
     };
 };
+
+function currentWeather(city){
+    // get request url from :  https://openweathermap.org/forecast5
+    let requestURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIkey}`;
+}
