@@ -93,3 +93,27 @@ function UVIndex(long, lat){
         $(currentUvindex).html(data.value);
     });
 };
+
+function foreCast(dataId){
+    let forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?id=${dataId}&units=imperial&appid=${APIkey}`;
+
+    fetch(forecastUrl)
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(data){
+        for (let i = 0; i < 5; i++){
+            let currentDate = moment().format("MMM Do, YYYY");
+            let weatherIcon = data.list[((i + 1) * 8) - 1].weather[0].icon;
+            let iconUrl = `http://openweathermap.org/img/wn/${weatherIcon}.png`;
+            let ftemp = data.list[((i + 1) * 8) - 1].main.temp;
+            let fhumidity = data.list[((i + 1) * 8) - 1].main.humidity;
+
+            $("#fDate" + i).html(currentDate);
+            $("#fImg" + i).html("<img src=" + iconUrl + ">");
+            $("#fTemp" + i).html(ftemp + "℉");
+            $("fHumidity" + i).html(fhumidity + "%");
+
+        };
+    });
+};
