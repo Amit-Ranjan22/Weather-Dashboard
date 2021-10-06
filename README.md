@@ -57,7 +57,7 @@ Deployed application should look like the below given image.<br>
 ------
 Deployed application screenshot<br>
 ------
-<img src = "" alt= "weather-dashboard-app-screenshot">
+<img src = "Deployed-Application-Screenshot/Deployed-App-Screenshot.png" alt= "weather-dashboard-app-screenshot">
 
 *GitHub URL to the repository*
 ------
