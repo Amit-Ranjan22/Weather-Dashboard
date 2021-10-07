@@ -115,7 +115,7 @@ function foreCast(dataId){
             $("fHumidity" + i).html(fhumidity + "%");
 
         };
-    });
+    })
 };
 
 function addToList(cty){
