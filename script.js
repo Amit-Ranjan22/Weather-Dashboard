@@ -31,7 +31,7 @@ function showWeather(event) {
 
 function currentWeather(city){
     // get request url from :  https://openweathermap.org/forecast5
-    let requestURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIkey}`;
+    let requestURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIkey}`;
 
     fetch(requestURL)
     .then(function (response) {
@@ -42,7 +42,7 @@ function currentWeather(city){
 
             let weatherIcon = data.weather[0].icon;
             // get the url for weather icon from : https://openweathermap.org/weather-conditions
-            let iconUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
+            let iconUrl = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
 
             // let date = moment().format("dddd, MM-Do-YYYY, h:mm:ss a");
 
